@@ -2,12 +2,14 @@
 
 namespace App\Http\Livewire\Admin\Users;
 use Illuminate\Support\Facades\Validator;
+use Livewire\WithPagination;
 use App\Models\User;
 
 use Livewire\Component;
 
 class UserList extends Component
 {
+    use WithPagination;
     public $showModal = true;
     public $user;
     public $state = [];
@@ -15,6 +17,7 @@ class UserList extends Component
 
     public function addNewUser()
     {
+        $this->state = [];
         $this->showModal=true;
         $this->dispatch('show-modal');
     }
@@ -61,7 +64,7 @@ class UserList extends Component
 
     public function render()
     {
-        $users = User::all();
+        $users = User::latest()->simplePaginate(6);
         return view('livewire.admin.users.user-list', [
             'users' => $users,
         ]);
