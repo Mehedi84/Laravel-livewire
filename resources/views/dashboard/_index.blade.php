@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="{{ url('assets/css/dark-theme.css') }}"/>
 	<link rel="stylesheet" href="{{ url('assets/css/semi-dark.css') }}"/>
 	<link rel="stylesheet" href="{{ url('assets/css/header-colors.css') }}"/>
-	
+
 	<title>TEST</title>
 
 	@livewireStyles()
@@ -209,9 +209,9 @@
 	<script src="{{ url('assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
 	<script src="{{ url('assets/plugins/metismenu/js/metisMenu.min.js') }}"></script>
 	<script src="{{ url('assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
-	{{-- <script src="{{ url('assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js') }}"></script>
+	<script src="{{ url('assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js') }}"></script>
     <script src="{{ url('assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
-	<script src="{{ url('assets/plugins/chartjs/js/chart.js') }}"></script> --}}
+	<script src="{{ url('assets/plugins/chartjs/js/chart.js') }}"></script>
 	<script src="{{ url('assets/js/index.js') }}"></script>
 	<!--app JS-->
 	<script src="{{ url('assets/js/app.js') }}"></script>
