@@ -239,5 +239,8 @@
 	window.addEventListener('show-modal', event => {
 		$("#modal-show").modal("show");
 	})
+	window.addEventListener('exampleModalData', event => {
+		$("#exampleModal").modal("show");
+	})
 
 </script>

@@ -11,6 +11,7 @@ class UserList extends Component
 {
     use WithPagination;
     public $showModal = true;
+    public $deleteUserId = '';
     public $user;
     public $state = [];
 
@@ -58,6 +59,15 @@ class UserList extends Component
 
     public function delete($id)
     {
+        $this->deleteUserId=$id;
+        $this->dispatch('exampleModalData');
+        // User::find($id)->delete();
+        // $this->dispatch('hide-modal', message: 'User Delete Successfully!!'); // hide modal
+    }
+
+    public function deleteUser()
+    {
+        $id = $this->deleteUserId;
         User::find($id)->delete();
         $this->dispatch('hide-modal', message: 'User Delete Successfully!!'); // hide modal
     }
