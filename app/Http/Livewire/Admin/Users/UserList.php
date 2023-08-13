@@ -15,7 +15,6 @@ class UserList extends Component
     public $user;
     public $state = [];
 
-
     public function addNewUser()
     {
         $this->state = [];

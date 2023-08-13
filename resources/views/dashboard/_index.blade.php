@@ -222,8 +222,4 @@
 </body>
 
 </html>
-<script>
-	window.addEventListener('show-modal', event => {
-		$("#modal-show").modal("show");
-	})
-</script>
+
